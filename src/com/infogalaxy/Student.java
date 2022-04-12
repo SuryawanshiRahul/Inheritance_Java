@@ -12,19 +12,15 @@ public class Student {
         name = sc.next();
     }
 }
+ class Internal extends Student {
+     int m1;
+     int m2;
 
- class  Result extends Student{
-
-    void getResult(){
-        System.out.println("Student ID is :"+id);
-        System.out.println("Student Name Is:"+name);
-    }
- }
- class Main{
-     public static void main(String[] args) {
-         Result result = new Result();
-         result.setStudent();
-         result.getResult();
-
+     void setInternal() {
+         System.out.println("Enter M1 and M2");
+         m1 = sc.nextInt();
+         m2 = sc.nextInt();
      }
+
  }
+
